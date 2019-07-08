@@ -1,5 +1,14 @@
 'use strict';
 
 function collectSameElements(collectionA, objectB) {
-  return '实现练习要求，并改写该行代码。';
+  var arr = new Array();
+  var collectionB = objectB.value;
+  for(var i in collectionA){
+    for(var j in collectionB){
+      if(collectionA[i]==collectionB[j]){
+        arr.push(collectionB[j]);
+      }
+    }
+  }
+  return arr;
 }
